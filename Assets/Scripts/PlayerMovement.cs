@@ -9,24 +9,33 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed;
     [SerializeField] float doublejumpSpeed;
     [SerializeField] float climbSpeed;
+    [SerializeField] Vector2 kick = new Vector2(0f, 10f);
 
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask groundLayer;
 
     Rigidbody2D playerBody;
     CapsuleCollider2D playerCollider;
+    BoxCollider2D groundCollider;
     SpriteRenderer spriteRenderer;
     Animator playerAnim;
+
     float hInput;
+    float gravityScaleAtStart;
+
     bool isGrounded;
     bool doublejump;
-    float gravityScaleAtStart;
+    bool isAlive = true;
+
+    
+
     
 
     void Start()
     {
         playerBody = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<CapsuleCollider2D>(); 
+        groundCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerAnim = GetComponent<Animator>();
         gravityScaleAtStart = playerBody.gravityScale;
@@ -37,16 +46,23 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(groundChecker.position, 0.1f, groundLayer);
         
+        if(!isAlive)
+        {
+            return;
+        }
 
         Movement();
         Jump();
         //Jumpping();
         Flip();
         Climb();
+        Die();
     }
 
     void Movement()
     {
+        if(!isAlive) { return; }
+
         hInput = Input.GetAxis("Horizontal");
         playerBody.velocity = new Vector2(hInput * moveSpeed , playerBody.velocity.y);
 
@@ -84,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+            if (groundCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
             {
                 playerBody.velocity = new Vector2(playerBody.velocity.x, jumpSpeed);
             }
@@ -127,5 +143,16 @@ public class PlayerMovement : MonoBehaviour
             playerAnim.SetBool("isClimbing", false);
         }
         
+    }
+
+    void Die()
+    {
+        if(playerCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
+            isAlive = false;
+            playerAnim.SetTrigger("Dying");
+            playerBody.velocity = kick;
+           
+        }
     }
 }
