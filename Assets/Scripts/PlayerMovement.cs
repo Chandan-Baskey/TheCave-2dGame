@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed;
     [SerializeField] float doublejumpSpeed;
     [SerializeField] float climbSpeed;
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
     [SerializeField] Vector2 kick = new Vector2(0f, 10f);
 
     [SerializeField] Transform groundChecker;
@@ -56,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         //Jumpping();
         Flip();
         Climb();
+        Attack();
         Die();
     }
 
@@ -145,14 +148,22 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    void Attack()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            if (!isAlive) { return; }
+            Instantiate(bullet, gun.position, transform.rotation);
+        }
+    }
     void Die()
     {
-        if(playerCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        if(playerCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")))
         {
             isAlive = false;
             playerAnim.SetTrigger("Dying");
             playerBody.velocity = kick;
-           
+            FindAnyObjectByType<GameSession>().PlayerDeath();
         }
     }
 }

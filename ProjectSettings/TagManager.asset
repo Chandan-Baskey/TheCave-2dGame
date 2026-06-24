@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -17,10 +18,10 @@ TagManager:
   - Background
   - Bouncing
   - Enemy
-  - 
-  - 
-  - 
-  - 
+  - Hazards
+  - Bullets
+  - Coin
+  - Door
   - 
   - 
   - 
@@ -44,14 +45,20 @@ TagManager:
   - name: Background
     uniqueID: 3887327481
     locked: 0
+  - name: Door
+    uniqueID: 901390655
+    locked: 0
   - name: Ground
     uniqueID: 1672341377
     locked: 0
-  - name: Water
-    uniqueID: 1202262669
-    locked: 0
   - name: Ladder
     uniqueID: 2290152299
+    locked: 0
+  - name: Hazard
+    uniqueID: 3528773473
+    locked: 0
+  - name: Water
+    uniqueID: 1202262669
     locked: 0
   - name: Bounce
     uniqueID: 1669776463
@@ -61,4 +68,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2010934161
+    locked: 0
+  - name: Coin
+    uniqueID: 2127883561
     locked: 0
