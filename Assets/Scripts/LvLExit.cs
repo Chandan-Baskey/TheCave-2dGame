@@ -19,9 +19,10 @@ public class LvLExit : MonoBehaviour
 
         if(nextScene == SceneManager.sceneCountInBuildSettings)
         {
-            nextScene = 0;
+            nextScene = 1;
         }
 
+        FindFirstObjectByType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(nextScene);
     }
 }
