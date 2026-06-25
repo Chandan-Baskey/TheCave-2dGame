@@ -26,7 +26,7 @@ public class GameSession : MonoBehaviour
     private void Start()
     {
         livesText.text = "Life: "+ playerLives.ToString();
-        scoreText.text ="Coin: "+score.ToString();
+        scoreText.text ="Score: "+score.ToString();
     }
     public void PlayerDeath()
     {
@@ -42,7 +42,7 @@ public class GameSession : MonoBehaviour
     public void AddToScore(int add)
     {
         score += add;
-        scoreText.text = "Coin: " + score.ToString();
+        scoreText.text = "Score: " + score.ToString();
     }
 
     void TakeLife()
