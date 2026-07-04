@@ -48,9 +48,6 @@ TagManager:
   - name: Door
     uniqueID: 901390655
     locked: 0
-  - name: Ground
-    uniqueID: 1672341377
-    locked: 0
   - name: Ladder
     uniqueID: 2290152299
     locked: 0
@@ -69,6 +66,12 @@ TagManager:
   - name: Player
     uniqueID: 2010934161
     locked: 0
+  - name: Ground
+    uniqueID: 1672341377
+    locked: 0
   - name: Coin
     uniqueID: 2127883561
+    locked: 0
+  - name: New Layer 11
+    uniqueID: 798876503
     locked: 0

@@ -8,7 +8,10 @@ public class LvLExit : MonoBehaviour
     [SerializeField] float loadDeleyTime = 2f;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        StartCoroutine(LoadNextLvL());
+        if (collision.CompareTag("Player"))
+        {
+            StartCoroutine(LoadNextLvL());
+        }
     }
 
     IEnumerator LoadNextLvL()

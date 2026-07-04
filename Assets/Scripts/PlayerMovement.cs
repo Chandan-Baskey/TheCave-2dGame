@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -165,5 +166,9 @@ public class PlayerMovement : MonoBehaviour
             playerBody.velocity = kick;
             FindAnyObjectByType<GameSession>().PlayerDeath();
         }
+    }
+    public void backGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

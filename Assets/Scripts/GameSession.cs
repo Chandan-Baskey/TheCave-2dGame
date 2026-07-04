@@ -23,6 +23,23 @@ public class GameSession : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.buildIndex == 0) // Main Menu
+        {
+            Destroy(gameObject);
+        }
+    }
     private void Start()
     {
         livesText.text = "Life: "+ playerLives.ToString();
@@ -59,4 +76,9 @@ public class GameSession : MonoBehaviour
         SceneManager.LoadScene(1);
         Destroy(gameObject);
     }
+
+    
+
+    
+
 }
