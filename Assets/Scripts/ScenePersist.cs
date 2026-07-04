@@ -10,6 +10,12 @@ public class ScenePersist : MonoBehaviour
         int SceneSessions = FindObjectsByType<ScenePersist>(FindObjectsSortMode.None).Length;
         if (SceneSessions > 1)
         {
+#if UNITY_EDITOR
+            if (UnityEditor.Selection.activeGameObject == gameObject)
+            {
+                UnityEditor.Selection.activeGameObject = null;
+            }
+#endif
             Destroy(gameObject);
         }
         else

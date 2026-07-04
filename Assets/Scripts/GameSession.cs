@@ -13,9 +13,16 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     private void Awake()
     {
+
         int GameSessions = FindObjectsByType<GameSession>(FindObjectsSortMode.None).Length;
-        if(GameSessions > 1)
+        if (GameSessions > 1)
         {
+#if UNITY_EDITOR
+            if (UnityEditor.Selection.activeGameObject == gameObject)
+            {
+                UnityEditor.Selection.activeGameObject = null;
+            }
+#endif
             Destroy(gameObject);
         }
         else
@@ -72,7 +79,11 @@ public class GameSession : MonoBehaviour
 
     void RestSession()
     {
-        FindFirstObjectByType<ScenePersist>().ResetScenePersist();      
+        var scenePersist = FindFirstObjectByType<ScenePersist>();
+        if (scenePersist != null)
+        {
+            scenePersist.ResetScenePersist();
+        }
         SceneManager.LoadScene(1);
         Destroy(gameObject);
     }
