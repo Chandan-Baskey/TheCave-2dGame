@@ -1874,17 +1874,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &552392489 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6109224289099452667, guid: 34ebfde865fd4cf408fd3ae3658b3e62, type: 3}
-  m_PrefabInstance: {fileID: 5961144383882661214}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33220872dbf185c44bbe96822224a8b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &592429965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4648,34 +4637,6 @@ PrefabInstance:
     - target: {fileID: 7091967273642428202, guid: 34ebfde865fd4cf408fd3ae3658b3e62, type: 3}
       propertyPath: m_Name
       value: Game Session
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726042430693392723, guid: 34ebfde865fd4cf408fd3ae3658b3e62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726042430693392723, guid: 34ebfde865fd4cf408fd3ae3658b3e62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726042430693392723, guid: 34ebfde865fd4cf408fd3ae3658b3e62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 552392489}
-    - target: {fileID: 8726042430693392723, guid: 34ebfde865fd4cf408fd3ae3658b3e62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726042430693392723, guid: 34ebfde865fd4cf408fd3ae3658b3e62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: back
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726042430693392723, guid: 34ebfde865fd4cf408fd3ae3658b3e62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameSession, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726042430693392723, guid: 34ebfde865fd4cf408fd3ae3658b3e62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
