@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -200.7, y: -91.4}
+  m_AnchoredPosition: {x: -30, y: -87.408}
   m_SizeDelta: {x: 336.79, y: 129.695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &147053906956904916
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: 2'
+  m_text: 'COIN: 33'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c731e7046d3d4d542aa64e8a4f5fba68, type: 2}
   m_sharedMaterial: {fileID: 89300871147216011, guid: c731e7046d3d4d542aa64e8a4f5fba68, type: 2}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -168,8 +168,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 841.96594, y: 487.16998}
-  m_SizeDelta: {x: 222.4681, y: 68.705}
+  m_AnchoredPosition: {x: 848.22845, y: 489.7332}
+  m_SizeDelta: {x: 192.3825, y: 67.028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7237238395812504485
 CanvasRenderer:
@@ -397,8 +397,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -840.4312, y: 489.09}
-  m_SizeDelta: {x: 200.7962, y: 57.185}
+  m_AnchoredPosition: {x: -854.9973, y: 489.09}
+  m_SizeDelta: {x: 171.6641, y: 57.185}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1390271469361928806
 CanvasRenderer:
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Alive: 1'
+  m_text: 'LIFE: 3'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c731e7046d3d4d542aa64e8a4f5fba68, type: 2}
   m_sharedMaterial: {fileID: 89300871147216011, guid: c731e7046d3d4d542aa64e8a4f5fba68, type: 2}
