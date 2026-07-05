@@ -20,13 +20,13 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://github.com/Chandan-Baskey/TheCave-2dGame/blob/78952d69bc35617b33004612b6f429bacfd49ff9/Main%20%20View.png?raw=true" width="400">
-  <br><em>Cave level — climbable terrain and enemy encounters</em>
+  <img src="https://github.com/Chandan-Baskey/TheCave-2dGame/blob/78952d69bc35617b33004612b6f429bacfd49ff9/Main%20%20View.png?raw=true" width="600">
+  <br><em>Start View — climbable terrain and enemy encounters</em>
 </p>
 
 | Game Level | Game Level |
 |---|---|
-| <img src="https://github.com/Chandan-Baskey/TheCave-2dGame/blob/78952d69bc35617b33004612b6f429bacfd49ff9/Escape%20View2.jpg?raw=true" width="600"> | <img src="https://github.com/Chandan-Baskey/TheCave-2dGame/blob/78952d69bc35617b33004612b6f429bacfd49ff9/Escape%20view.jpg?raw=true" width="400"> |
+| <img src="https://github.com/Chandan-Baskey/TheCave-2dGame/blob/78952d69bc35617b33004612b6f429bacfd49ff9/Escape%20View2.jpg?raw=true" width="400"> | <img src="https://github.com/Chandan-Baskey/TheCave-2dGame/blob/78952d69bc35617b33004612b6f429bacfd49ff9/Escape%20view.jpg?raw=true" width="400"> |
 ---
 
 ## 🎮 Features
