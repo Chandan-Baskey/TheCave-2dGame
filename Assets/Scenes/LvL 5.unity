@@ -240,6 +240,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7402655934981513240, guid: 9dbc4f37f8f046d4fa0b45e71161ca91, type: 3}
+      propertyPath: dieClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 99fc32e76f9e0224b847b4aa72e846e2, type: 3}
+    - target: {fileID: 7402655934981513240, guid: 9dbc4f37f8f046d4fa0b45e71161ca91, type: 3}
+      propertyPath: jumpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ffe450e8a37e1b43a0152010b541e91, type: 3}
+    - target: {fileID: 7402655934981513240, guid: 9dbc4f37f8f046d4fa0b45e71161ca91, type: 3}
+      propertyPath: moveClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 67f7a37c53a9bb34486c2912d22e60a4, type: 3}
+    - target: {fileID: 7402655934981513240, guid: 9dbc4f37f8f046d4fa0b45e71161ca91, type: 3}
+      propertyPath: climbClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc5e2b0b507e68f4490216232cc8843c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
