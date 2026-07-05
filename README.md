@@ -13,7 +13,9 @@
   <img src="https://img.shields.io/badge/Status-In%20Development-yellow">
 </p>
 
-**Escape The Cave** is a 2D side-scrolling platformer built in Unity. The player runs, jumps, double-jumps, climbs, and shoots their way through a series of underground cave levels — collecting coins, dodging enemies and hazards, and reaching the exit of each level before their lives run out.
+**Run. Jump. Climb. Shoot. Get out alive** 
+
+**Escape The Cave** is a single-player survival action-adventure shooting game set deep underground. Navigate dangerous cave levels, blast patrolling enemies, dodge deadly hazards, collect coins, and fight your way to the exit — with only three lives standing between you and a full reset.
 
 ---
 
