@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30, y: -87.408}
+  m_AnchoredPosition: {x: -25, y: -87.408}
   m_SizeDelta: {x: 336.79, y: 129.695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &147053906956904916
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'COIN: 33'
+  m_text: 'COIN: 00'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c731e7046d3d4d542aa64e8a4f5fba68, type: 2}
   m_sharedMaterial: {fileID: 89300871147216011, guid: c731e7046d3d4d542aa64e8a4f5fba68, type: 2}
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 153.72546, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -168,8 +168,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 848.22845, y: 489.7332}
-  m_SizeDelta: {x: 192.3825, y: 67.028}
+  m_AnchoredPosition: {x: 846.74786, y: 489.7332}
+  m_SizeDelta: {x: 195.3437, y: 67.028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7237238395812504485
 CanvasRenderer:
