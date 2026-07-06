@@ -1379,11 +1379,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6685779802278217935, guid: 2a9d3d2bc7a63074ca0087483156f24f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -608.4341
+      value: -608.8
       objectReference: {fileID: 0}
     - target: {fileID: 6685779802278217935, guid: 2a9d3d2bc7a63074ca0087483156f24f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -329.93707
+      value: -329.28
       objectReference: {fileID: 0}
     - target: {fileID: 6685779802278217935, guid: 2a9d3d2bc7a63074ca0087483156f24f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3048,11 +3048,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6685779802278217935, guid: 2a9d3d2bc7a63074ca0087483156f24f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -604.0391
+      value: -602.62
       objectReference: {fileID: 0}
     - target: {fileID: 6685779802278217935, guid: 2a9d3d2bc7a63074ca0087483156f24f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -329.75647
+      value: -328.76
       objectReference: {fileID: 0}
     - target: {fileID: 6685779802278217935, guid: 2a9d3d2bc7a63074ca0087483156f24f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4937,12 +4937,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3053601732116731869, guid: dd0554d0e7008494a849fe70791848d7, type: 3}
+      propertyPath: speed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053601732116731869, guid: dd0554d0e7008494a849fe70791848d7, type: 3}
       propertyPath: movementVector.x
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5484098520200444183, guid: dd0554d0e7008494a849fe70791848d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.17
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 5484098520200444183, guid: dd0554d0e7008494a849fe70791848d7, type: 3}
       propertyPath: m_LocalPosition.y
