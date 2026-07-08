@@ -228,8 +228,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  moveClip: {fileID: 8300000, guid: f4e5921ec3b8f6742991c1f8d25de88d, type: 3}
-  jumpClip: {fileID: 8300000, guid: 99fc32e76f9e0224b847b4aa72e846e2, type: 3}
+  moveClip: {fileID: 8300000, guid: 67f7a37c53a9bb34486c2912d22e60a4, type: 3}
+  jumpClip: {fileID: 8300000, guid: 2ffe450e8a37e1b43a0152010b541e91, type: 3}
+  dieClip: {fileID: 8300000, guid: 99fc32e76f9e0224b847b4aa72e846e2, type: 3}
+  climbClip: {fileID: 8300000, guid: fc5e2b0b507e68f4490216232cc8843c, type: 3}
 --- !u!82 &6053151927263266905
 AudioSource:
   m_ObjectHideFlags: 0
