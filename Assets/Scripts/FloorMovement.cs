@@ -20,4 +20,19 @@ public class Oscillator : MonoBehaviour
         movementFactor = Mathf.PingPong(Time.time * speed, 1); // Oscillates between 0 and 1
         transform.position = Vector3.Lerp(startPosition, endPosition, movementFactor); // Move object
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.transform.parent = this.transform;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.transform.parent = null;
+        }
+    }
 }
